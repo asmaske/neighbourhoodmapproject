@@ -19,7 +19,7 @@ function get_collegescorecard_info_data_in_html_form(p_data) {
 
     var csc_marker_display = [];
     var info_school_id = p_data.results[0].id;
-    var info_website = p_data.results[0].school.school_website; 
+    var info_website = p_data.results[0].school.school_url; 
     var info_city = p_data.results[0].school.city;
     var info_state = p_data.results[0].school.state;
     var info_zip = p_data.results[0].school.zip; 
