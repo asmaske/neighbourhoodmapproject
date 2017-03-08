@@ -14,7 +14,6 @@ The project uses the following software:
 
 The project uses the following REST apis:
 
-* [Wikipedia](https://en.wikipedia.org/w/api.php)
 * [College Score Card](https://api.data.gov/ed/collegescorecard/v1/schools.json)
 
 ## Project Details
@@ -29,17 +28,13 @@ The project uses the following REST apis:
 + **grunt** creates the minified version of Javascript files and copies all the source files to destination folder 
 
 ### 3. Running the application
-+ There are two versions of the project
-+ One version uses **Wikipedia** API and the second one uses **CollegeScoreCard** API
-+ Open **index-wikipedia.html** file in browser to use Wikipedia API
-+ Open **index-collegescorecard.html** file in browser to use College Score Card API
-+ Following steps are common to both APIs
-    + Web page displays list of North Carolina state colleges
-    + Google map is displayed with location of colleges using markers
-    + User can filter the list using search box
-    + The list gets filtered dynamically as the user inputs search value
-    + The markers are also dynamically added/removed based on search value
-    + Clicking the marker displays WindowInfo box with data about the college
++ Open **index-collegescorecard.html** file in browser
++ Web page displays list of North Carolina state colleges
++ Google map is displayed with location of colleges using markers
++ User can filter the list using search box
++ The list gets filtered dynamically as the user inputs search value
++ The markers are also dynamically added/removed based on search value
++ Clicking the marker displays WindowInfo box with data about the college
     
 ### 4. Directory Structure
 * catalog
@@ -47,7 +42,6 @@ The project uses the following REST apis:
     + Gruntfile.js
     + package.json
     + index-collegescorecard.html
-    + index-wikipedia.html
     + dist (files copied here by Grunt tool)
         + css
         + fonts
@@ -77,7 +71,6 @@ The project uses the following REST apis:
             + red-pushpin.png
             + ylw-pushpin.png
         + js
-            + map-app-wikipedia.js
             + map-app-collegescorecard.js
             + map-module.js
             + data-module.js

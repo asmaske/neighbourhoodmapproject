@@ -11,7 +11,6 @@ module.exports = function(grunt) {
 
       // when this task is run, lint the Gruntfile and all js files in src
       build: ['Gruntfile.js',
-              'src/**/map-app-wikipedia.js',
               'src/**/map-app-collegescorecard.js',
               'src/**/data-module.js',
               'src/**/map-module.js']
@@ -23,7 +22,6 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'dist/js/map-app-wikipedia.min.js': 'src/js/map-app-wikipedia.js',
           'dist/js/map-app-collegescorecard.min.js': 'src/js/map-app-collegescorecard.js',
           'dist/js/data-module.min.js': 'src/js/data-module.js',
           'dist/js/map-module.min.js': 'src/js/map-module.js'
